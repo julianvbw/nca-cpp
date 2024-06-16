@@ -15,8 +15,8 @@ Then you may build using:
 ```
 mkdir build
 cd build
-cmake .. -DCMAKE_PREFIX_PATH=[PATH_TO_LIBTORCH]
-make [--target nca_train OR nca_gui] [-j NUMBER_OF_THREADS]
+cmake .. -DCMAKE_PREFIX_PATH=[PATH_TO_LIBTORCH] [--target nca_train OR nca_gui]
+make [-j NUMBER_OF_THREADS]
 ```
 
 This will build the binaries `nca_train` and, if OpenGL is available, `nca_gui`. If you're building `nca_gui`, also have CUDA ready, since this project uses OpenGL interop to avoid device->host copies in between updates.
