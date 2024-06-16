@@ -5,8 +5,10 @@ My main aim was to try out the LibTorch API out of curiosity, while producing so
 
 This project comes in two parts: A training executable  with an extensive CLI build on [TCLAP](https://tclap.sourceforge.net/) and an interactive GUI based on [GLFW](https://github.com/glfw/glfw). Essential are of course [LibTorch](https://pytorch.org/cppdocs/) and [LodePNG](https://github.com/lvandeve/lodepng) for PNG file handling in C++.
 
-This project comes with an example image, the 32x32px dragon emoji from [Google's Noto Emoji repository](https://github.com/googlefonts/noto-emoji) (Happy Year of the Dragon), and a fully trained model using the example parameters below.
-[](example/grow.gif)
+This project comes with an example image, the 32x32px dragon emoji from [Google's Noto Emoji repository](https://github.com/googlefonts/noto-emoji) <img src="example/dragon.png"> (Happy Year of the Dragon), and a fully trained model using the example parameters below.
+
+<img src="example/grow.gif">
+(it definitively isnt perfect...)
 
 # How to build
 First of all, this repository comes with all dependencies *except* LibTorch, since it is huge. Go get it yourself and make sure the __CMAKE_PREFIX_PATH__ is set correctly!
